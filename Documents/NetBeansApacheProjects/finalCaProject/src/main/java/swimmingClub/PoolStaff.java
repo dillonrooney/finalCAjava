@@ -20,10 +20,19 @@ public class PoolStaff {
 
     public PoolStaff(String firstName, String lastName, int staff_Id, String department) {
         this.firstName = firstName;
+	
         this.lastName = lastName;
         this.staff_Id = staff_Id;
+	//you will need to generate some departments in your generator
+	// or have different classes that inherit from PoolStaff for each department
+	// and then find a way to pick a random derived class
         this.department = department;
     }
+	// does Java have function overloading so you can do something like
+	// public PoolStaff(MainGenerator generator){
+		//this.name = generator.getName();
+		//...
+	//}
     
     public void showInfo(){
         System.out.println("*** Information ****");
