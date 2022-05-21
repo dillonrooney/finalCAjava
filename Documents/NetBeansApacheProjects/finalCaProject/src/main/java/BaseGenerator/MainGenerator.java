@@ -17,6 +17,8 @@ public class MainGenerator {
         
 	public String getRandomName() {
 				
+		// I think it is better to put this in the constructor as you do not need
+		// a different random number generator each time. 
 		Random r = new Random();
 		
 		//pick a firstname and surname based on length of array
@@ -26,5 +28,8 @@ public class MainGenerator {
 		return ( fname + " " + sname);
 		
 	}
+	// I think you also need some functions for random integers like coach levels
+	// and maybe one for random staff type
+
     
 }
